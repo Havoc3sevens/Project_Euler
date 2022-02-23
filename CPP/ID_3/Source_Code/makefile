@@ -15,4 +15,4 @@ clean:
 .SUFFIXES: $(SUFFIXES) .cpp
 
 .cpp.o:
-	$(CPP) -c $<
+	$(CPP) -std=c++11 -c $<
