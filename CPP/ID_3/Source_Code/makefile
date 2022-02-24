@@ -4,6 +4,8 @@ PROG1 = run
 
 CPP = g++
 
+CPPFLAGS = -std=c++11
+
 all: $(PROG1)
 
 $(PROG1): $(OBJS1)
@@ -15,4 +17,4 @@ clean:
 .SUFFIXES: $(SUFFIXES) .cpp
 
 .cpp.o:
-	$(CPP) -std=c++11 -c $<
+	$(CPP) $(CPPFLAGS) -c $<
