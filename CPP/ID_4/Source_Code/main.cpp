@@ -8,4 +8,5 @@ This program solves Project Euler ID 4
 #include <cstdio>
 
 int main(void) {
+    printf("Test!\n");
 }
