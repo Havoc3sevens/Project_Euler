@@ -7,15 +7,23 @@ This program solves Project Euler ID 4
 */
 #include <cstdio>
 
-int main(void) {
-    int check;
-    int i = 1;
-    int n = 20;
-    
-    while (check != 0) {
-        check = (i%2)+(i%3)+(i%4)+(i%5)+(i%6)+(i%7)+(i%8)+(i%9)+(i%10)+(i%11)+(i%12)+(i%13)+(i%14)+(i%15)+(i%16)+(i%17)+(i%18)+(i%19)+(i%20);
-        ++i;
+int smllst_multi(int max_fctr) {
+    int i = 0;
+    int j = max_fctr;
+    while (i != 1) {
+        i = max_fctr;
+        while((j%i==0 && i!=1)) {
+            --i;
+        }
+        ++j;
     }
-    printf("i = %d\n", i-1);
+    return j-1;
+}
+
+int main(void) {
+    int res;
+    int n = 20;
+    res = smllst_multi(n);
+    printf("Smallest Multiple from 1-%d = %d\n", n, res);
     return 0;
 } 
