@@ -1,9 +1,9 @@
 /*
-This program solves Project Euler ID 4
+This program solves Project Euler ID 5
     Created by: Enrique Hurtado
-    Date: 28 May 2022
+    Date: 29 May 2022
     History:
-        Date: 05/28/22 || Mod: Program written || By: Enrique Hurtado
+        Date: 05/29/22 || Mod: Program written || By: Enrique Hurtado
 */
 #include <cstdio>
 
