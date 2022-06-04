@@ -1,9 +1,10 @@
 /*
 This program solves Project Euler ID 8
     Created by: Enrique Hurtado
-    Date: 31 May 2022
+    Date: 01 June 2022
     History:
-        Date: 05/31/22 || Mod: Program written || By: Enrique Hurtado
+        Date: 06/01/22 || Mod: Program written || By: Enrique Hurtado
+        Date: 06/02/22 || Mod: Solved || By: Enrique Hurtado
 */
 #include <iostream>
 #include <fstream>
