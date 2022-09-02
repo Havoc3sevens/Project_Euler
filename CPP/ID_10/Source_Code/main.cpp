@@ -3,7 +3,7 @@ This program solves Project Euler ID 10
     Created by: Enrique Hurtado
     Date: 19 June 2022
     History:
-        Date: 02/19/22 || Mod: Program written || By: Enrique Hurtado
+        Date: 06/19/22 || Mod: Program written || By: Enrique Hurtado
 */
 #include <iostream>
 #include <vector>

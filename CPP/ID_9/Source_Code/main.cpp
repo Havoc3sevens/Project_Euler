@@ -1,5 +1,5 @@
 /*
-This program solves Project Euler ID 8
+This program solves Project Euler ID 9
     Created by: Enrique Hurtado
     Date: 02 June 2022
     History:
