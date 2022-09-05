@@ -6,20 +6,20 @@ This program solves Project Euler ID 12
         Date: 09/04/22 || Mod: Program written || By: Enrique Hurtado
 */
 #include <iostream>
-#include <omp.h>
+#include <math.h>
 
 using namespace std;
 
 int devisor_count(long int val) {
     int count = 0;
     int sqrt_val = sqrt(val);
-    #pragma omp parallel shared(count)
-    #pragma omp for
-    for(int i=1; i<=val; ++i) {
+    for(int i=1; i<=sqrt_val; ++i) {
         if (val%i==0) {
-            #pragma omp critical
-            ++count;
+            count += 2;
         }
+    }
+    if (sqrt_val*sqrt_val == val){
+        count = count - 1;
     }
     return count;
 }
@@ -36,12 +36,6 @@ int main(void) {
         if(count_val>max_count) {
             max_count = count_val;
             max_tri = tri_num;
-        }
-        if(i%100==0) {
-            cout << "i = " << i << endl;
-            cout << "Current num = " << tri_num << endl;
-            cout << "Max dev = " << max_count << endl;
-            cout << "Max num = " << max_tri << endl;
         }
     }
 
