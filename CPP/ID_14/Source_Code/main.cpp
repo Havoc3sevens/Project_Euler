@@ -33,7 +33,7 @@ int get_sequence(int num_in) {
     return count;
 }
 
-int get_sequence_count(int num_in) {
+int get_sequence_count(long int num_in) {
     int count=1;
     while(num_in!=1) {
         if (is_even(num_in)) {
@@ -49,12 +49,20 @@ int get_sequence_count(int num_in) {
 int main(void) {
     int n=13;
     int res;
-    for(int i = 1; i <20; ++i){
+    int t_num;
+    int max=0;
+    for(int i = 1; i <1000000; ++i){
         cout<<"Number being tested: " << i << endl;
         n=i;
-        res = get_sequence(n);
+        res = get_sequence_count(n);
         cout << "Total count: "<< res << endl << endl;
+        if (res>max) {
+            max = res;
+            t_num = n;
+        }
     }
+
+    cout << "Num = " << t_num << ", Total = " << max << endl;
 
     return 0;
 }
