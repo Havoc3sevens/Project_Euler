@@ -11,11 +11,11 @@ This program solves Project Euler ID 14
 using namespace std;
 
 struct HashTable {
-    static const int hash_box_size = 1000;
+    static const int hash_box_size = 1000000;
     list<pair<int, int>> hash_box[hash_box_size];
     
     int hash_func(int key_in) {
-        return key_in%3;
+        return key_in%1000000;
     }
 
     void insert(int key_in, int int_in) {
@@ -113,14 +113,15 @@ int main(void) {
         while(num_in!=1) {
             if (is_even(num_in)) {
                 num_in = num_in/2;
-                ht_count = HT1.find_value(num_in);
             } else {
                 num_in = 3*num_in+1;
-                ht_count = HT1.find_value(num_in);
             }
-            if(ht_count != 0) {
-                count = count + ht_count;
-                break;
+            if(num_in< i) {
+                ht_count = HT1.find_value(num_in);
+                if(ht_count) {
+                    count = count + ht_count;
+                    break;
+                }
             }
             ++count;
         }
