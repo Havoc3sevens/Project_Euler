@@ -19,7 +19,7 @@ int main(void) {
     int long res;
     ifstream data_in("alt_data.txt");
 
-    sum_int;
+    sum_int=0;
     while(getline(data_in,line)) {
         line_read.push_back(line);
         sum_int += stol(line);
@@ -27,5 +27,5 @@ int main(void) {
 
     res = stol(to_string(sum_int).substr(0,10));
 
-    cout << res << endl;
+    cout << sum_int << endl;
 }
