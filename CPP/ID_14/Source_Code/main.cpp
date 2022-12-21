@@ -13,7 +13,7 @@ using namespace std;
 struct HashTable {
     static const int hash_box_size = 100000;
     list<pair<int, int>> hash_box[hash_box_size];
-    
+
     int hash_func(int key_in) {
         return key_in%100000;
     }
@@ -57,7 +57,7 @@ struct HashTable {
                     cout << testL.second << endl;
                     cout << endl;
                 }
-            }   
+            }
     }
 
 };
