@@ -2,7 +2,7 @@ OBJS1 = main.o
 
 PROG1 = run
 
-CPP = g++ -fopenmp
+CPP = g++
 
 CPPFLAGS = -std=c++11
 
