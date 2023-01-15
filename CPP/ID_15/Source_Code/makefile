@@ -1,4 +1,4 @@
-OBJS1 = main.o
+OBJS1 = list_test.o
 
 PROG1 = run
 

@@ -1,6 +1,6 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/ehurtado/Documents/Project_Euler/CPP'
-make: Leaving directory '/home/ehurtado/Documents/Project_Euler/CPP'
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/ehurtado/Documents/Project_Euler/CPP'
+make: Leaving directory `/Users/ehurtado/Documents/Project_Euler/CPP'
  
 make: *** No targets specified and no makefile found.  Stop.
 

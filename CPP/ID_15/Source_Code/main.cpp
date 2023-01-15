@@ -10,6 +10,34 @@ This program solves Project Euler ID 15
 
 using namespace std;
 
+void matrix_nearest_nbr(int n, vector <pair<int,int>> &vec_out) {
+    int nn = (n+1)*(n+1);
+    int ii;
+    int jj;
+    int mtrx[nn][nn];
+    int count=1;
+
+    for(int i=0; i<=n; ++i) {
+        for(int j=0; j<=n; ++j) {
+            mtrx[i][j] = count;
+            count ++;
+        }
+    }
+
+    for(int i=0; i<=n; ++i) {
+        for(int j=0; j<=n; ++j) {
+            ii = i + 1;
+            jj = j + 1;
+            if (ii != n+1) {
+                vec_out[mtrx[i][j]].first = mtrx[ii][j];
+            }
+            if (jj != n+1) {
+                vec_out[mtrx[i][j]].second = mtrx[i][jj];
+            }
+         }
+    }
+}
+
 int main(void) {
     vector <pair<int,int>> vec_init={};
     vector <pair<int,int>> vec={};
