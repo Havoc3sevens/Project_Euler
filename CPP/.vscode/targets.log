@@ -10,14 +10,14 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Sat Jan 14 15:38:59 2023
+# Make data base, printed on Fri Jan 27 17:47:47 2023
 
 # Variables
 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
-# automatic
  
+# automatic
 ?F = $(notdir $?)
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
@@ -40,13 +40,13 @@ __CFBundleIdentifier = com.microsoft.VSCode
 # environment
 VSCODE_CWD = /
 # environment
-PATH = /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH = /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/bin:.
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.A3dZ7RFumB/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WvZrcNMQeI/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -88,6 +88,7 @@ USER = ehurtado
 # default
 MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
 # default
+ 
 .VARIABLES := 
 # environment
 TMPDIR = /var/folders/4s/dz_hdms11pbdvby5yj_n3lxc0000gn/T/
@@ -125,13 +126,14 @@ LC_ALL = C
 SUFFIXES := 
 # environment
 MAKELEVEL := 0
- 
+# environment
+CLICOLOR = 1
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2498
+VSCODE_PID = 778
 # variable set hash-table stats:
-# Load=57/1024=6%, Rehash=0, Collisions=1/77=1%
+# Load=58/1024=6%, Rehash=0, Collisions=1/78=1%
 
 # Pattern-specific Variable Values
 
@@ -182,6 +184,7 @@ makefile:
 #  File has been updated.
 #  Failed to be updated.
 # variable set hash-table stats:
+ 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -211,9 +214,8 @@ GNUmakefile:
 # # of strings in strcache: 0
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
- 
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sat Jan 14 15:38:59 2023
+# Finished Make data base on Fri Jan 27 17:47:47 2023
 
  
