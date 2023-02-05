@@ -151,8 +151,54 @@ string thousands(int int_in) {
     case 1:
         return "onethousand";
         break;
+    case 2:
+        return "twothousand";
+        break;
+    case 3:
+        return "threethousand";
+        break;
+    case 4:
+        return "fourthousand";
+        break;
+    case 5:
+        return "fivethousand";
+        break;
+    case 6:
+        return "sixthousand";
+        break;
+    case 7:
+        return "seventhousand";
+        break;
+    case 8:
+        return "eightthousand";
+        break;
+    case 9:
+        return "ninethousand";
+        break;
     default:
         return "Null";
         break;
     } 
+}
+
+string int_to_long_string_format(int int_in) {
+    int new_int;
+    if (to_string(int_in).size() == 1) {
+        return ones(int_in);
+    } else if (to_string(int_in).size() == 2) {
+        if (cti(to_string(int_in)[0]) == 1) return teens(int_in);
+        new_int = int_in - cti(to_string(int_in)[0])*10;
+        if (new_int == 0) return tens(cti(to_string(int_in)[0]));
+        return tens(cti(to_string(int_in)[0])) + "-" + int_to_long_string_format(new_int);
+    } else if (to_string(int_in).size() == 3) {
+        int new_int;
+        new_int = int_in - cti(to_string(int_in)[0])*100;
+        if (new_int == 0) return hundreds(cti(to_string(int_in)[0]));
+        return hundreds(cti(to_string(int_in)[0])) + " and " + int_to_long_string_format(new_int);
+    } else if (to_string(int_in).size() == 4) {
+        int new_int;
+        new_int = int_in - cti(to_string(int_in)[0])*1000;
+        return thousands(cti(to_string(int_in)[0])) + " " + int_to_long_string_format(new_int);
+    }
+    return "Null";
 }
