@@ -114,31 +114,31 @@ string tens(int int_in) {
 string hundreds(int int_in) {
     switch (int_in) {
     case 1:
-        return "one hundred";
+        return "onehundred";
         break;
     case 2:
-        return "two hundred";
+        return "twohundred";
         break;
     case 3:
-        return "three hundred";
+        return "threehundred";
         break;
     case 4:
-        return "four hundred";
+        return "fourhundred";
         break;
     case 5:
-        return "five hundred";
+        return "fivehundred";
         break;
     case 6:
-        return "six hundred";
+        return "sixhundred";
         break;
     case 7:
-        return "seven hundred";
+        return "sevenhundred";
         break;
     case 8:
-        return "eight hundred";
+        return "eighthundred";
         break;
     case 9:
-        return "nine hundred";
+        return "ninehundred";
         break;
     default:
         return "Null";
@@ -149,7 +149,7 @@ string hundreds(int int_in) {
 string thousands(int int_in) {
     switch (int_in) {
     case 1:
-        return "one thousand";
+        return "onethousand";
         break;
     default:
         return "Null";
