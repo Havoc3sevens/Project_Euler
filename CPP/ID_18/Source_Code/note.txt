@@ -1,0 +1,6 @@
+From bottom, start with 1st largest path.
+Then get 2nd path from N-1 + largest val from N
+Then get 3rd path from N-2 + largest val from N-1 and N
+.
+.
+.
