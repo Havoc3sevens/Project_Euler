@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Fri Feb  3 13:48:13 2023
+
+# Make data base, printed on Sat Mar  4 10:14:31 2023
 
 # Variables
 
@@ -15,6 +18,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -23,6 +28,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 @F = $(notdir $@)
 # makefile
 CURDIR := /Users/ehurtado/Documents/Project_Euler/CPP
+ 
 # makefile
 SHELL = /bin/sh
 # environment
@@ -42,7 +48,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.WvZrcNMQeI/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.BtonLU9Edm/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -56,7 +62,7 @@ HOME = /Users/ehurtado
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/ehurtado/Library/Application Support/Code/CachedData/e2816fe719a4026ffa1ee0189dc89bdfdbafb164
+VSCODE_CODE_CACHE_PATH = /Users/ehurtado/Library/Application Support/Code/CachedData/92da9481c0904c6adfe372c12da3b7748d74bdcb
 # environment
 LOGNAME = ehurtado
 # environment
@@ -90,10 +96,7 @@ TMPDIR = /var/folders/4s/dz_hdms11pbdvby5yj_n3lxc0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/ehurtado/Library/Application Support/Code/1.75.0-main.sock
- 
-make: *** No rule to make target `all'.  Stop.
-
+VSCODE_IPC_HOOK = /Users/ehurtado/Library/Application Support/Code/1.76-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -103,7 +106,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.1083441.1083449
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.1732385.1732391
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # automatic
@@ -129,9 +132,10 @@ CLICOLOR = 1
 # environment
 LANG = C
 # environment
-VSCODE_PID = 22663
+VSCODE_PID = 5090
 # variable set hash-table stats:
-# Load=58/1024=6%, Rehash=0, Collisions=1/78=1%
+ 
+# Load=59/1024=6%, Rehash=0, Collisions=1/79=1%
 
 # Pattern-specific Variable Values
 
@@ -139,9 +143,9 @@ VSCODE_PID = 22663
 
 # Directories
 
-# . (device 16777220, inode 811132): 20 files, no impossibilities.
+# . (device 16777220, inode 811132): 22 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -213,6 +217,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Fri Feb  3 13:48:13 2023
+# Finished Make data base on Sat Mar  4 10:14:31 2023
 
  
