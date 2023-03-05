@@ -9,43 +9,8 @@ This program solves Project Euler ID 18
 
 using namespace std;
 
-/*[for later]
-    for(int i = 0; i < nn; i++) {
-        if(i == 0) {
-            cout << arr[ij-1][i] << " i = " << i << endl;
-        } else if (i == nn-1) {
-            cout << arr[ij-1][i-1] << " i = " << i-1 << endl;
-        } else {
-            if (arr[ij-1][i] > arr[ij-1][i-1] ){
-                cout << arr[ij-1][i] << " i = " << i << endl;
-            } else {
-                cout << arr[ij-1][i-1] << " i = " << i-1 << endl;
-            }
-        }
-    }
-
-
-
-
-    int n = 6;
-
-    if (n == 0) {
-        res = 0;
-    } else if (n == nn-1) {
-        res = nn - 1;
-    } else {
-        if (arr[ij-1][n]>arr[ij-1][n-1]) {
-            res = n;
-        } else {
-            res = n-1;
-        }
-    }
-
-    cout << "val = " << arr[ij-1][res] << ", itr = " << res << endl;
-*/
-
 int main(void) {
-    /*int arr[15][15] = {{75},
+    int arr[15][15] = {{75},
                        {95, 64},
                        {17, 47, 82},
                        {18, 35, 87, 10},
@@ -59,42 +24,27 @@ int main(void) {
                        {70, 11, 33, 28, 77, 73, 17, 78, 39, 68, 17, 57},
                        {91, 71, 52, 38, 17, 14, 91, 43, 58, 50, 27, 29, 48},
                        {63, 66, 4, 68, 89, 53, 67, 30, 73, 16, 69, 87, 40, 31},
-                       {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23}};*/
+                       {4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23}};
+
+    int n;
+    int i;
+    int ii;
+    int num_res;
+
+    n = 15;
     
-    int arr[4][4] =  {{3},
-                      {7,4},
-                      {2,4,6},
-                      {8,5,9,3}};
+    for (int nn = n; nn >= 2; nn--) {
+        i = nn-1;
+        ii = i-1;
 
-
-    for (int start = 0; start <= 3; start++) {
-        int n = start;
-        int ii;
-        int sum = 0;
-        int res;
-        ii =4;
-        cout << "val = " << arr[ii-1][n] << ", itr = " << n << ", ii = " << ii << endl;
-        sum += arr[ii-1][n];
-        for(int i = ii-1; i >= 1; i--) {
-            ii = i-1;
-            if (n == 0) {
-                res = 0;
-            } else if (n == i) {
-                res = i-1;
+        for (int j=0; j <= ii; j++) {
+            if (arr[i][j] > arr[i][j+1]) {
+                num_res = arr[i][j]; 
             } else {
-                if (arr[i-1][n]>arr[i-1][n-1]) {
-                    res = n;
-                } else {
-                    res = n-1;
-                }
+                num_res = arr[i][j+1];
             }
-            cout << "val = " << arr[i-1][res] << ", itr = " << res << ", ii = " << i << endl;
-            n = res;
-            sum += arr[i-1][res];
+            arr[ii][j] += num_res;
         }
-        cout << "start = " << start << ", sum = " << sum << endl;
     }
-
-
-
+    cout << arr[0][0] << endl;
 }
