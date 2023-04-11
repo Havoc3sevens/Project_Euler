@@ -4,6 +4,7 @@ This program solves Project Euler ID 20
     Date: 15 March 2023
     History:
         Date: 03/15/23 || Mod: Program written || By: Enrique Hurtado
+        Date: 04/10/23 || Mod: Product engine built || By: Enrique Hurtado
 */
 
 #include <iostream>
