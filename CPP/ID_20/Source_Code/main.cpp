@@ -19,8 +19,8 @@ int main (void) {
     int v1 = 7;
     int v2 = 7158;
     int arr[1];
-    array_test(x,arr,1);
+    array_test(4,arr,1);
     cout << arr[0] << endl;
-    array_test(x,arr,1);
+    array_test(3,arr,1);
     cout << arr[0] << endl;
 }

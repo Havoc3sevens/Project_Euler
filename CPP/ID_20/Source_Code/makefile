@@ -1,4 +1,4 @@
-OBJS1 = main.o
+OBJS1 = a_prod.o
 
 PROG1 = run
 
