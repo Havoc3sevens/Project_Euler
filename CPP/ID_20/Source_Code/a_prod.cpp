@@ -36,10 +36,10 @@ void times_engine(int x, int arr_in[], int arr_out[], int & r_size) {
 }
 
 int main (void) {
-    int arr[500] = {1, 3, 2, 4, 2, 5, 1, 7};
+    int arr[500] = {5, 1, 7};
     int a_size = 2;
-    int arr_p[500] = {4, 5, 8, 5, 7, 2, 5, 9};
-    int p_size = 7;
+    int arr_p[500] = {5, 9};
+    int p_size = 1;
     int arr_store[500]={};
     int arr_res[500]={};
     int r_size;
@@ -74,13 +74,11 @@ int main (void) {
 
         r_size += j;
 
-        //this means that the store size needs to expand to result size
-        //if (r_size >= s_size) {
+        //makes sure that the store size will be big enough
+        //for the sum
         s_size = r_size;
-        //}
 
         //add res to store
-        //fix array add function
         carry = 0;
         for(int i = 0; i <= s_size; i++) {
             sum = arr_store[i] + arr_res[i] + carry;
