@@ -58,7 +58,6 @@ void large_num_pow(unsigned long long int first_num, unsigned long long int seco
     int r_size;
     int arr_store[500]={};
     int s_size;
-    int pow_num;
     cout << first_num << "x" << second_num << "=";
 
     a_size = 0;
@@ -78,10 +77,9 @@ void large_num_pow(unsigned long long int first_num, unsigned long long int seco
     p_size=p_size-1;
 
     for(int j=0; j <= p_size; j++) {
-        pow_num = arr_p[j];
         r_size = a_size;
         if(j==0) {
-            times_engine(pow_num, arr, arr_res, r_size);
+            times_engine(arr_p[j], arr, arr_res, r_size);
 
             s_size = r_size;
             for(int i = 0; i <= s_size; i++) {
@@ -90,7 +88,7 @@ void large_num_pow(unsigned long long int first_num, unsigned long long int seco
             continue;
         }
 
-        times_engine(pow_num, arr, arr_res, r_size);
+        times_engine(arr_p[j], arr, arr_res, r_size);
 
         //move over array by one space
         for(int i = r_size; i >= 0; i--) {
@@ -111,9 +109,4 @@ void large_num_pow(unsigned long long int first_num, unsigned long long int seco
     }
     print_array(arr_store, s_size);
     cout << endl;
-}
-
-int main (void) {
-    large_num_pow(72572875544652895, 655765687512789543);
-
 }

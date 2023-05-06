@@ -8,19 +8,10 @@ This program solves Project Euler ID 20
 */
 
 #include <iostream>
+#include "a_prod.h"
 
 using namespace std;
 
-void array_test(int x, int arr_in[], int a_size) {
-    arr_in[0] = 1*x;
-}
-
 int main (void) {
-    int v1 = 7;
-    int v2 = 7158;
-    int arr[1];
-    array_test(4,arr,1);
-    cout << arr[0] << endl;
-    array_test(3,arr,1);
-    cout << arr[0] << endl;
+    large_num_pow(725, 63);
 }
